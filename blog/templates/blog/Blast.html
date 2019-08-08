@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Blast</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<link rel="stylesheet" type="text/css" href="Blast.css">
+</head>
+<body>
+<div id="box">
+<!--logo-->
+<div id="top">
+<span class="logo"><img src="Picture/logo.png"/></span>
+<span class="name">Plant P450 Database</span>
+</div>
+
+<div id="navigation">
+<ul>
+<li><a href="post_list.html"><span>Home</span></a></li>
+<li><a href="Sequences.html"><span>Sequences</span></a></li>
+<li><a href="Blast.html"><span>Blast</span></a></li>
+</ul>
+</div>
+
+<div id="submit">
+<form action="upload.php" method="post" enctype="multipart/form-data">
+<textarea name="text" cols="60" rows="10"></textarea>
+<input type="file" name="file"/>
+<br/>
+<input type="submit" value="submit" name="submit" onclick="document.search.submit.value='uploading...';document.search.submit.disabled=true;document.search.submit();"/>
+</form>
+</div>
+
+</body>
+</html>
